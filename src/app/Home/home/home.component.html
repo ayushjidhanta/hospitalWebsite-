@@ -1,0 +1,48 @@
+<app-navbar></app-navbar>
+
+<header>
+  <style>
+    #intro-example {
+      height: 400px;
+    }
+    @media (min-width: 992px) {
+      #intro-example {
+        height: 700px;
+      }
+    }
+  </style>
+
+  <div
+    id="intro-example"
+    class="p-5 text-center bg-image"
+    style="
+      background-image: url('https://img.freepik.com/free-photo/empty-hospital-ward-with-heart-rate-monitor-bed-healthcare-recovery-nobody-emergency-room-with-medical-equipment-intensive-care-patient-reanimation-room-with-tools_482257-40043.jpg?w=1380&t=st=1686159550~exp=1686160150~hmac=b2fef3c176a745dddf1f6cc79fd5a5cc43ab7807930d650580f88728ccb7b3d8');
+    "
+  >
+  <!-- style="background-color: rgba(0, 0, 0, 0.7)" -->
+    <div class="mask" >
+      <div class="d-flex justify-content-center align-items-center h-100">
+        <div class="text-white">
+          <h1 class="mb-3">XYZ Hospital</h1>
+          <h5 class="mb-4">Health & Wealth</h5>
+          <a
+          style=" font-weight: 700; "
+            class="btn btn-outline-light btn-lg m-2"
+            routerLink="/appointment"
+            >Book Appointment</a
+          >
+          <a
+          style="font-weight: 700; "
+            class="btn btn-outline-light btn-lg m-2"
+            routerLink="/scheduled"
+            >Sceduled Appointment</a
+          >
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+<app-card></app-card>
+<app-shortdiscription></app-shortdiscription>
+<app-footer></app-footer>
+<!-- <app-slider></app-slider> -->

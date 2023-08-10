@@ -1,0 +1,3 @@
+input[type=text],input[type=password],input[type=email],input[type=number]{
+    border-bottom: 0.5px solid black;
+  }

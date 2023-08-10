@@ -1,0 +1,128 @@
+<!-- <div class="login">
+  <form class="wrap" [formGroup]="loginForm" (ngSubmit)="onSubmit()">
+    <h1>Login</h1>
+    <i class="far fa-circle-user fa-4x"></i>
+    <p id="errorlogin" style="color: red"></p>
+    <div class="input-container">
+      <input id="email" type="email" formControlName="email" required>
+      <label for="email">Email</label>
+    </div>
+    <div class="input-container">
+      <input id="password" type="password" formControlName="password" required>
+      <label for="password">Password</label>
+    </div>
+     
+    <div *ngIf="showSpinner" class="spinner-border" role="status">
+      <span class="visually-hidden">Loading...</span>
+    </div>
+
+    <button type="submit" [disabled]="!loginForm.valid" class="btn btn-outline-success" data-mdb-ripple-color="dark">Login</button>
+    <p>Or Register Yourself</p>
+    <a routerLink="/signup">
+      <button type="button" class="btn btn-outline-secondary" data-mdb-ripple-color="dark">Register</button>
+    </a>
+  </form>
+</div> -->
+
+<!-- <div class="login">
+    <form class="wrap">
+      <h1>Login</h1>
+      <div class="input-container">
+        <input id="email" type="email" formControlName="your Email" required>
+        <label for="email">Email</label>
+      </div>
+      <div class="input-container">
+        <input id="password" type="password" formControlName="Your password" required>
+        <label for="password">Password</label>
+      </div>
+      <button type="button" class="btn btn-success">Login</button>
+      <p>Or Register Yourself</p>
+      <a routerLink="/signup">
+        <button type="button" class="btn btn-secondary">Register</button>
+      </a>
+    </form>
+  </div> -->
+
+<section class="vh-100">
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-sm-6 px-0 d-none d-sm-block">
+        <img
+          src="https://img.freepik.com/free-photo/flat-lay-health-still-life-arrangement-with-copy-space_23-2148854064.jpg?w=1380&t=st=1686569529~exp=1686570129~hmac=b34a2dd7a7b6f3e539b892a5e356e357c734f8d6fce801b43bd45100781fc974"
+          alt="Login image"
+          class="w-100 vh-100"
+          style="object-fit: cover; object-position: left"
+        />
+      </div>
+
+      <div class="col-sm-6 text-black">
+        <div class="px-5 ms-xl-4">
+          <i
+          class="far fa-hospital fa-2x me-3 pt-5 mt-xl-4"
+          style="color: #6cc2c2"
+        ></i>
+          <span class="h1 fw-bold mb-0">XYZ Hospital</span>
+        </div>
+
+        <div
+          class="d-flex align-items-center h-custom-2 px-5 ms-xl-4 mt-5 pt-5 pt-xl-0 mt-xl-n5"
+        >
+          <form
+            style="width: 23rem"
+            [formGroup]="loginForm"
+            (ngSubmit)="onSubmit()"
+          >
+            <h3 class="fw-normal mb-3 pb-3" style="letter-spacing: 1px">
+              Log in
+            </h3>
+            <p id="errorlogin" style="color: red"></p>
+            <div class="form-outline mb-4">
+              <input
+                type="email"
+                id="email"
+                class="form-control form-control-lg"
+                formControlName="email"
+                required
+              />
+              <label for="email">Email address</label>
+            </div>
+
+            <div class="form-outline mb-4">
+              <input
+                type="password"
+                id="password"
+                class="form-control form-control-lg"
+                formControlName="password"
+                required
+              />
+              <label for="password">Password</label>
+            </div>
+
+            <!-- spinner Integrated-->
+            <div *ngIf="showSpinner" class="spinner-border" role="status">
+              <span class="visually-hidden">Loading...</span>
+            </div>
+
+            <button
+              class="btn btn-info btn-lg btn-block"
+              type="submit"
+              [disabled]="!loginForm.valid"
+            >
+              Login
+            </button>
+            <p class="small mb-5 pb-lg-2">
+              <a class="text-muted" href="#!">Forgot password?</a>
+            </p>
+            <p>Don't have an account?</p>
+            <button
+              class="btn btn-info btn-lg btn-block"
+              routerLink="/signup"
+            >
+              Register here
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

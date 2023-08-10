@@ -1,0 +1,86 @@
+
+<nav class="navbar navbar-expand-lg navbar-light bg-white">
+    
+    <div class="container-fluid">
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-mdb-toggle="collapse"
+        data-mdb-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <i class="fas fa-bars"></i>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+       
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link" routerLink="/home"> 
+              <i class="fas fa-house fa-1x"></i>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" routerLink="/services">Service</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" routerLink="/appointment">Appointment</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" routerLink="/scheduled">Scheduled</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" routerLink="/aboutus">About Us</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" routerLink="/reviews">Reviews</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" routerLink="/privacypolicy">Privacy Policy</a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="d-flex align-items-center">
+        <div class="dropdown">
+          <a
+            class="dropdown-toggle d-flex align-items-center hidden-arrow"
+            href="#"
+            id="navbarDropdownMenuAvatar"
+            role="button"
+            data-mdb-toggle="dropdown"
+            aria-expanded="false"
+          >
+          <div *ngIf="showSpinner" class="spinner-border" role="status">
+            <span class="visually-hidden">Loading...</span>
+          </div>
+          <img
+            src="https://img.freepik.com/free-photo/smiling-young-pretty-woman-standing-looking-camera-isolated-white-background-with-copy-space_141793-31938.jpg?size=626&ext=jpg&uid=R99726642&ga=GA1.2.2017489204.1680027702&semt=ais"
+            class="rounded-circle"
+            height="25"
+            alt="Black and White Portrait of a Man"
+            loading="lazy"
+          />
+          </a>
+          <ul
+            class="dropdown-menu dropdown-menu-end"
+            aria-labelledby="navbarDropdownMenuAvatar"
+          >
+            <li>
+              <a class="dropdown-item" routerLink="/myprofile">My profile</a>
+            </li>
+            <li>
+              <a class="dropdown-item" routerLink="/setting">Settings</a>
+            </li>
+
+            <li style="cursor:pointer">
+              <a class="dropdown-item" (click)="logout()">Logout</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </nav>
+

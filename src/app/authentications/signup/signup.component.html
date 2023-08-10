@@ -1,0 +1,100 @@
+<!-- <div class="signup">
+    <form class="wrap" [formGroup]="profileForm" (ngSubmit)="onSubmit()">
+      <h1>Register</h1>
+      <i class="fas fa-user-plus fa-3x" ></i>
+      <p style="color:red" id="errorThrow"></p>
+      <div class="input-container">
+        <input id="first-name" type="text" formControlName="firstName" required>
+        <label for="first-name">First Name</label>
+      </div>
+      <div class="input-container">
+        <input id="last-name" type="text" formControlName="lastName" required>
+        <label for="last-name">Last Name</label>
+      </div>
+      <div class="input-container">
+        <input id="email" type="email" formControlName="email" required>
+        <label for="email">Email</label>
+      </div>
+      <div class="input-container">
+        <input id="password" type="password" formControlName="password" required>
+        <label for="password">Password</label>
+      </div>
+      <div class="input-container">
+        <input id="confirmPassword" type="password" formControlName="confirmPassword" required>
+        <label for="confirmPassword">Confirm Password</label>
+      </div>
+
+      <div *ngIf="showSpinner" class="spinner-border" role="status">
+        <span class="visually-hidden">Loading...</span>
+      </div>
+      
+      <button type="submit" [disabled]="!profileForm.valid" class="btn btn-outline-success" data-mdb-ripple-color="dark">Register</button>
+     
+      <button class="back" (click)="handleBack()">
+        <i class="fa-solid fa-arrow-left fa-2xl"></i>
+      </button>  
+    </form>
+  </div> -->
+  
+  <section class="vh-100">
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-sm-6 px-0 d-none d-sm-block">
+        <img src="https://img.freepik.com/free-photo/flat-lay-health-still-life-arrangement-with-copy-space_23-2148854064.jpg?w=1380&t=st=1686569529~exp=1686570129~hmac=b34a2dd7a7b6f3e539b892a5e356e357c734f8d6fce801b43bd45100781fc974" alt="Login image" class="w-100 vh-100" style="object-fit: cover; object-position: left;">
+      </div>
+
+      <div class="col-sm-6 text-black">
+        <div class="px-5 ms-xl-4">
+          <i
+          class="far fa-hospital fa-2x me-3 pt-5 mt-xl-4"
+          style="color: #6cc2c2"
+        ></i>
+          <span class="h1 fw-bold mb-0">XYZ Hospital</span>
+        </div>
+
+        <div class="d-flex align-items-center h-custom-2 px-5 ms-xl-4 mt-5 pt-5 pt-xl-0 mt-xl-n5">
+          <form class="wrap" [formGroup]="profileForm" (ngSubmit)="onSubmit()" style="width: 23rem;">
+            <h3 class="fw-normal mb-3 pb-3" style="letter-spacing: 1px">
+              Register
+            </h3>
+           
+            <p style="color: red" id="errorThrow"></p>
+            <div class="form-outline mb-3">
+              <input id="first-name" type="text" formControlName="firstName" class="form-control form-control-lg" required>
+              <label for="first-name">First Name</label>
+            </div>
+            <div class="form-outline mb-3">
+              <input id="last-name" type="text" formControlName="lastName" class="form-control form-control-lg" required>
+              <label for="last-name">Last Name</label>
+            </div>
+            <div class="form-outline mb-3">
+              <input id="email" type="email" formControlName="email" class="form-control form-control-lg" required>
+              <label for="email">Email</label>
+            </div>
+            <div class="form-outline mb-3">
+              <input id="password" type="password" formControlName="password" class="form-control form-control-lg" required>
+              <label for="password">Password</label>
+            </div>
+            <div class="form-outline mb-3">
+              <input id="confirmPassword" type="password" formControlName="confirmPassword" class="form-control form-control-lg" required>
+              <label for="confirmPassword">Confirm Password</label>
+            </div>
+
+            <!-- Add your spinner element here if needed -->
+            <div *ngIf="showSpinner" class="spinner-border" role="status">
+              <span class="visually-hidden">Loading...</span>
+            </div>
+
+            <button class="btn btn-info btn-lg btn-block" type="submit" [disabled]="!profileForm.valid" data-mdb-ripple-color="dark">Register</button>
+
+            <button class="back" (click)="handleBack()">
+              <i class="fa-solid fa-arrow-left fa-2xl"></i>
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+  
